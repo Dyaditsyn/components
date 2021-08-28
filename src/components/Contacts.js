@@ -53,14 +53,14 @@ export default function Contacts() {
     return (
         <div>
             <h1>Phone Book</h1>
-            <p>Filter by name or phone number</p>
+            <p>Filter by name or phone number:</p>
             <input 
                     type="text"
                     placeholder="search" 
                     value={search}
                     onChange={ e => {setSearch(e.target.value)}} />
             <div>
-            <p>Filter by gender</p>
+            <p>Filter by gender:</p>
                 <label>male
                     <input type="checkbox" name="male" checked={maleChk} onChange={() => setMaleChk(!maleChk)}/>
                 </label>
